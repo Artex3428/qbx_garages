@@ -328,7 +328,7 @@ local function createZones(garageName, garage, accessPoint, accessPointIndex)
                 end
             end,
             inside = function()
-                config.drawGarageMarker(accessPoint.coords.xyz, useRadius)
+                -- Empty for now since markers was removed
             end,
             debug = config.debugPoly,
         })
@@ -347,7 +347,7 @@ local function createZones(garageName, garage, accessPoint, accessPointIndex)
                     end
                 end,
                 inside = function()
-                    config.drawDropOffMarker(accessPoint.dropPoint, dropUseRadius)
+                    -- Empty for now since markers was removed
                 end,
                 debug = config.debugPoly,
             })
